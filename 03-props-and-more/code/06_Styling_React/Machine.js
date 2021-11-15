@@ -2,7 +2,7 @@ class Machine extends React.Component {
 	render() {
 		const { s1, s2, s3 } = this.props;
 		const winner = s1 === s2 && s2 === s3;
-		const colors = { fontSize: '50px', backgroundColor: 'purple' };
+		const colors = { fontSize: '40px', backgroundColor: '#E0DEDE',  padding: '10px' };
 
 		return (
 			<div className="Machine">

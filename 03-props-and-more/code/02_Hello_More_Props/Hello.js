@@ -4,7 +4,7 @@ class Hello extends React.Component {
 		return (
 			<div>
 				<p>Hi {this.props.to} from {this.props.from}{bangs}</p>
-				<img src={this.props.img} />
+				<img className="img-responsive" src={this.props.img}  />
 			</div>
 		);
 	}

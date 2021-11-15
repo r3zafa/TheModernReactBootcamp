@@ -7,9 +7,7 @@ class App extends React.Component {
           from="Paul"
           bangs={4}
         />
-        <Hello
-          to="George"
-        />
+        <Hello/>
 
       </div>
     );
