@@ -1,0 +1,38 @@
+.Die {
+    margin-left: 2rem;
+    margin-right: 2rem;
+    margin-bottom: 10vh;
+    margin-top: 20vh;
+    color: rgb(12, 99, 240);
+    font-size: 10em;
+    text-shadow: 7px 10px rgba(12, 99, 240, 0.32);
+}
+
+.shaking {
+    animation-name: shaking;
+    animation-duration: 0.4s;
+}
+
+@keyframes shaking {
+    from {
+        transform: translate3d(0, 0, 0);
+    }
+    15% {
+        transform: translate3d(-25%, 0, 0) rotate3d(0, 0, 1, -5deg);
+    }
+    30% {
+        transform: translate3d(20%, 0, 0) rotate3d(0, 0, 1, 3deg);
+    }
+    45% {
+        transform: translate3d(-15%, 0, 0) rotate3d(0, 0, 1, -3deg);
+    }
+    60% {
+        transform: translate3d(10%, 0, 0) rotate3d(0, 0, 1, 2deg);
+    }
+    75% {
+        transform: translate3d(-5%, 0, 0) rotate3d(0, 0, 1, -1deg);
+    }
+    to {
+        transform: translate3d(0, 0, 0);
+    }
+}

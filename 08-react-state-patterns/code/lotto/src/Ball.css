@@ -1,0 +1,15 @@
+.Ball {
+    border-radius: 50%;
+    color: rgb(255, 255, 255);
+    text-shadow: 2px 0.5px rgb(0, 0, 0);
+    display: inline-block;
+    width: 2.9em;
+    height: 2.15em;
+    padding-top: 0.75em;
+    text-align: center;
+    margin-right: 0.5em;
+    font-weight: bold;
+    font-size: 1.5em;
+    background: radial-gradient(circle at 50% 120%, #f38888, #f5c3c3 15%, #f30404 75%, #062745de 100%);
+    box-shadow: 1px 3px 5px rgb(153, 151, 151);
+}

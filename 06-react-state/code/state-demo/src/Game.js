@@ -4,7 +4,7 @@ class Game extends Component {
 	constructor(props) {
 		super(props);
 		this.state = {
-			score    : 99,
+			score    : 70,
 			gameOver : false
 		};
 	}
