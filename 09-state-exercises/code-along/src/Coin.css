@@ -1,0 +1,11 @@
+.Coin{
+    width: 150px;
+    height: 150px;
+    margin: 5rem auto;
+}
+.Coin img{
+    width: 150px;
+    height: 150px;
+    object-fit: fill;
+}
+
