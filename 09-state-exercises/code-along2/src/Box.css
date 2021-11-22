@@ -1,0 +1,8 @@
+.Box {
+    display: inline-block;
+    width: 6rem;
+    height: 6rem;
+    margin: 0.2rem;
+    border-radius: 0.5rem;
+    box-shadow: 4px 4px 5px gray;
+}
