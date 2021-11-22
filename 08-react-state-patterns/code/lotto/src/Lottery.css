@@ -1,0 +1,25 @@
+.Lottery {
+  border: solid 2px gray;
+  padding: 1em 0 2em 0;
+  text-align: center;
+  margin: 1em auto auto;
+  border-radius: 10px;
+  width: 40em;
+}
+
+.Lottery button {
+  background-color: rgb(9, 9, 203);
+  color: white;
+  font-weight: bolder;
+  font-size: 120%;
+  border-radius: 10px;
+  margin-top: 1em;
+  padding: 10px 20px;
+  border: 0;
+}
+
+.Lottery button:hover {
+  background-color: rgb(0, 98, 255);
+  transition: all 0.4s ease-out;
+
+}

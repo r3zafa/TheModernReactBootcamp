@@ -1,0 +1,15 @@
+.Ball {
+  background-color: tomato;
+  border-radius: 50%;
+  color: white;
+  display: inline-block;
+  width: 3em;
+  height: 2.25em;
+  padding-top: 0.75em;
+  text-align: center;
+  margin-right: 0.5em;
+  font-weight: bold;
+  font-size: 1.5em;
+  box-shadow: inset -10px -10px 100px rgba(255, 255, 255, 0), 5px 5px 10px rgba(49, 48, 48, 0.422), inset 0px 0px 10px rgb(52, 51, 51);
+}
+
