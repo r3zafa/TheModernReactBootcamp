@@ -5,7 +5,7 @@ import './Palette.css';
 class Palette extends Component {
     static defaultProps = {
         numBoxes: 9,
-        allColors: ['red','gold','black','violet','pink']
+        allColors: ['red','gold','black','violet','pink','blue','gray','green']
     };
 
 
