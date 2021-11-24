@@ -3,9 +3,6 @@ import { choice } from './choice';
 import './Box.css';
 
 class Box extends Component {
-    static defaultProps = {
-        color:  'black'
-    };
 
     constructor(props) {
         super(props);
@@ -31,9 +28,10 @@ class Box extends Component {
     render() {
         return ( 
             <div className = "Box" 
-            style = { {backgroundColor: this.state.color} }
-            onClick={this.handelClick}
-            />
+            style = { {backgroundColor: this.state.color} } 
+            onClick={this.handelClick}> 
+                <span>{this.state.color}</span>
+            </div>
         )
     }
 }

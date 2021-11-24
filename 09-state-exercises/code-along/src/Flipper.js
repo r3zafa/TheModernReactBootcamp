@@ -9,7 +9,7 @@ class Flipper extends Component{
     static defaultProps = {
         coins: [
             {side:'heads',imgSrc: coinFront},
-            {side:'tails',imgSrc:coinBack}
+            {side:'tails',imgSrc: coinBack}
         ]
     };
 
@@ -55,14 +55,9 @@ class Flipper extends Component{
                 <button onClick={this.handelClick}>
                     Flip Me!
                 </button>
-                <p> Flips Count: {this.state.nFlips}
-                </p>
-                <p>
-                    Heads: {this.state.nHeads}
-                </p>
-                <p>
-                    Tails: {this.state.nTails}
-                </p>
+                <p> Flips Count: {this.state.nFlips} </p>
+                <p> Heads: {this.state.nHeads} </p>
+                <p> Tails: {this.state.nTails} </p>
 
             </div>
         )
