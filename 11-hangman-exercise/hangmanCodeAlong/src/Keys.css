@@ -1,18 +1,18 @@
 .Keys {
     display: inline-block;
+    width: 2.5rem;
+    height: 2.5rem;
     border: none;
     font-family: inherit;
-    font-size: 1rem;
+    font-size: 2rem;
     cursor: pointer;
-    width: 30px;
-    margin: 5px 2px 2px 2px;
+    margin: 0.4rem;
     letter-spacing: 1px;
     outline: none;
     background: #ffc107;
     color: #fff;
     box-shadow: 0 6px #ff9800;
     border-radius: 5px;
-    padding-top: 4px;
 }
 
 .Keys:hover {

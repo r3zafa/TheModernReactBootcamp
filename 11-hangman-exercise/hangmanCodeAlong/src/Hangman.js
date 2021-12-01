@@ -54,18 +54,33 @@ class Hangman extends Component {
   render() {
     const isGameOver = this.state.nWrong > this.state.answer.length;
     const wrongGeusses = <h2>Wrong Guesses: <span className='Hangman-wrongGuesses'> {this.state.nWrong} </span> </h2>;
-    const gameOverH2 = <h2 className='Hangman-gameover'>Game Over!</h2>;
+    const gameOverH1 = <h1 className='Hangman-gameover'>Game Over!</h1>;
     const guessedLetter = <p className='Hangman-word'>{this.guessedWord()}</p> ;
     const showAnswer = <h1 className='Hangman-Answer'> The Answer was: <span className='Hangman-wrongGuesses'> {this.state.answer} </span> </h1>;
     const btns = this.generateButtons();
     const resetBtn = <button className='Hangman-reset' onClick={this.reset}>Reset</button>;
+    const buttons = <div>{btns} {resetBtn}</div>
+    const isWinner = this.guessedWord().join('') === this.state.answer;
+    const winnerH1 = <h1 className='Hangman-winner'>You Win</h1>;
+    
     return (
       <div className='Hangman'>
-        <h1 className='Hangman-h1'>Hangman</h1>
-        <Image nWrong={this.state.nWrong} />
-        {!isGameOver ? wrongGeusses: gameOverH2}
-        {!isGameOver ? guessedLetter : showAnswer}
-        {!isGameOver ? btns: resetBtn}
+        <div className="Hangman-flexContainer">
+          <div className="Hangman-row">
+            <h1 className='Hangman-h1'>Hangman</h1>
+            {!isGameOver ? wrongGeusses: gameOverH1}
+            {!isGameOver ? guessedLetter : showAnswer}
+            {!isWinner ? '':winnerH1}
+          </div>
+          <div className='Hangman-col2'>
+              {!isGameOver && !isWinner ? buttons: resetBtn}
+
+          </div>
+          <div className='Hangman-col3'>
+              <Image nWrong={this.state.nWrong} />
+          </div>
+        </div>
+      
       </div>
     );
   }

@@ -1,94 +1,111 @@
-.Hangman {
-  align-content: center;
-  width: 90vw;
-  color: black;
-  text-align: center;
-}
-
-.Hangman img {
-  text-align: center;
-  border: 5px solid white;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.27),
-    0 0 40px rgba(0, 0, 0, 0.06) inset;
-    zoom: 1.1;
-}
-
-.Hangman-h1 {
-  font-size: 3rem;
-  font-weight: 900;
-  color: #ff0000;
-  margin-bottom: 0.7rem;
-  
-}
-
-.Hangman-word {
-  letter-spacing: 1em;
-  margin: 0.4em -1em 0.2em 0;
-  font-size: 2rem;
-  zoom: 1.3;
-}
-.Hangman-answer {
-  letter-spacing: 0.5em;
-  margin: 0.4em -1em 0.2em 0;
-  font-size: 2rem;
-  zoom: 1.3;
-}
-
-.Hangman-btns, .Hangman-reset {
-  text-align: center;
-  display: inline-block;
-  width: 250px;
-  margin-top: 0;
-  zoom: 1.3;
-}
-
-.Hangman .Hangman-btns {
-  border: none;
-  font-family: inherit;
-  font-size: 1rem;
-  cursor: pointer;
-  width: 30px;
-  margin: 5px 2px 2px 2px;
-  letter-spacing: 1px;
-  outline: none;
-  background: #ffc107;
-  color: #fff;
-  box-shadow: 0 6px #ff9800;
-  border-radius: 5px;
-  padding-top: 4px;
-}
-
-.Hangman .Hangman-reset {
-  border: none;
-  font-family: inherit;
-  font-size: 1rem;
-  cursor: pointer;
-  margin: 5px 2px 2px 2px;
-  letter-spacing: 1px;
-  outline: none;
-  background: #ffc107;
-  color: #fff;
-  box-shadow: 0 6px #ff9800;
-  border-radius: 5px;
-  padding-top: 4px;
-}
-
-.Hangman button:hover {
-  background-color: #fda725;
-}
-
-.Hangman button:disabled {
-  background: #bdbdbd;
-  color: #eeeeee;
-  box-shadow: 0 6px #9e9e9e;
-}
-
-.Hangman-wrongGuesses{
-    padding-left: 5px;
-}
-.Hangman-wrongGuesses, .Hangman-gameover{
-  zoom: 1.2;
-  color: red;
-  font-weight: bolder;
-
-}
+    .Hangman {
+        padding: 0;
+        margin: 0;
+    }
+    
+    .Hangman-h1 {
+        color: #ff0606;
+        font-weight: bolder;
+        margin: 0;
+        padding: 0;
+        text-shadow: 3px 2px rgba(94, 92, 92, 0.404);
+    }
+    
+    .Hangman-winner {
+        margin: auto;
+        color: rgb(31, 225, 43);
+        text-shadow: 3px 2px rgb(215, 247, 189);
+    }
+    
+    .Hangman-word {
+        letter-spacing: 0.9em;
+        padding: 0;
+        margin: 0.4em -1em 0.2em 0;
+        font-size: 2rem;
+    }
+    
+    .Hangman-answer {
+        letter-spacing: 1em;
+        margin: 0.4em -1em 0.2em 0;
+        font-size: 2rem;
+    }
+    
+    .Hangman-wrongGuesses,
+    .Hangman-gameover {
+        color: rgb(245, 138, 16);
+        font-weight: bolder;
+    }
+    
+    .Hangman-flexContainer {
+        display: flex;
+        margin: 0 auto;
+        flex-flow: row wrap;
+        height: 95vh;
+        width: 95vw;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .Hangman-row {
+        flex: 0 0 100%;
+        /* Let it fill the entire space horizontally */
+        text-align: center;
+        padding: 1rem 0px;
+        height: auto;
+    }
+    
+    .Hangman-col2 {
+        display: flex;
+        flex: 0 0 40%;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+    
+    .Hangman-col3 {
+        flex: 0 0 40%;
+        /* ~ 2 * 33.33% */
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+    
+    .Hangman img {
+        text-align: center;
+        height: auto;
+        width: 300px;
+        border: 2px solid white;
+    }
+    
+    .Hangman-reset {
+        text-align: center;
+        display: inline-block;
+        width: 8rem;
+        height: 2.5rem;
+        margin: 10px;
+        border: none;
+        font-family: inherit;
+        font-size: 2rem;
+        cursor: pointer;
+        letter-spacing: 1px;
+        outline: none;
+        background: #ffc107;
+        color: #fff;
+        box-shadow: 0 6px #ff9800;
+        border-radius: 5px;
+    }
+    
+    @media (max-width: 600px) {
+        .Hangman-col2,
+        .Hangman-col3 {
+            flex: 0 0 80%;
+            /* ~ 2 * 33.33% */
+            text-align: center;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+    }
