@@ -1,3 +1,98 @@
+@font-face {
+    font-family: 'neontubes';
+    src: url("https://bitbucket.org/kennethjensen/webfonts/raw/fc13c1cb430a0e9462da56fe3f421ff7af72db71/neontubes/neontubes-webfont.eot");
+    src: url("https://bitbucket.org/kennethjensen/webfonts/raw/fc13c1cb430a0e9462da56fe3f421ff7af72db71/neontubes/neontubes-webfont.eot?#iefix") format("embedded-opentype"), url("https://bitbucket.org/kennethjensen/webfonts/raw/fc13c1cb430a0e9462da56fe3f421ff7af72db71/neontubes/neontubes-webfont.woff2") format("woff2"), url("https://bitbucket.org/kennethjensen/webfonts/raw/fc13c1cb430a0e9462da56fe3f421ff7af72db71/neontubes/neontubes-webfont.woff") format("woff"), url("https://bitbucket.org/kennethjensen/webfonts/raw/fc13c1cb430a0e9462da56fe3f421ff7af72db71/neontubes/neontubes-webfont.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
 .Board {
-  margin: 0 auto;
+    margin: 0 auto;
+}
+
+table tr:first-child td:first-child {
+    border-radius: 0.9rem 0 0 0 !important;
+}
+
+table tr:first-child td:last-child {
+    border-radius: 0 0.9rem 0 0 !important;
+}
+
+table tr:last-child td:first-child {
+    border-radius: 0 0 0 0.9rem !important;
+}
+
+table tr:last-child td:last-child {
+    border-radius: 0 0 0.9rem 0 !important;
+}
+
+.Board-body {
+    margin: 0 auto;
+    color: #fff;
+    background-color: transparent;
+    border-radius: 0.9rem;
+    box-shadow: 0 0 40px rgb(255, 255, 255), 0 0 30px rgb(225, 29, 176);
+}
+
+.Board-h1 {
+    color: #ffd9e2;
+    font-family: "neontubes";
+    font-size: 3rem;
+    text-shadow: 0 0 0 transparent, 0 0 10px #ff003c, 0 0 20px rgba(255, 0, 60, 0.5), 0 0 40px #ff003c, 0 0 100px #ff003c, 0 0 200px #ff003c, 0 0 300px #ff003c, 0 0 500px #ff003c, 0 0 1000px #ff003c;
+    -webkit-animation: blink 3s infinite alternate;
+    animation: blink 3s infinite alternate;
+}
+
+.Board-youWon-h1 {
+    font-size: 5rem;
+}
+
+.Board-youWon-btn {
+    border: 0;
+    border-radius: 0.5rem;
+    background-color: rgb(248, 145, 18);
+    font-size: 2rem;
+    padding: 1rem 1rem;
+    font-weight: bolder;
+    color: rgb(0, 0, 0);
+}
+
+.Board-youWon-btn:hover {
+    background-color: rgba(248, 145, 18, 0.633);
+}
+
+@-webkit-keyframes blink {
+    40% {
+        opacity: 1;
+    }
+    42% {
+        opacity: 0.8;
+    }
+    43% {
+        opacity: 1;
+    }
+    45% {
+        opacity: 0.2;
+    }
+    46% {
+        opacity: 1;
+    }
+}
+
+@keyframes blink {
+    40% {
+        opacity: 1;
+    }
+    42% {
+        opacity: 0.8;
+    }
+    43% {
+        opacity: 1;
+    }
+    45% {
+        opacity: 0.2;
+    }
+    46% {
+        opacity: 1;
+    }
 }
