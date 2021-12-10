@@ -1,0 +1,70 @@
+.todoForm {
+    width: 100%;
+    background-color: rgba(74, 74, 74, 0.85);
+    border-radius: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin: 10px 0;
+}
+
+.todoForm-div1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    width: 80%;
+    align-self: center;
+    padding: 10px 0;
+    text-transform: capitalize;
+    text-align: left;
+}
+
+.todoForm-div1 input {
+    padding: 10px;
+    width: 100%;
+    margin-left: 10px;
+    border-radius: 0.5rem;
+    border: 0;
+    box-shadow: 3px 3px 0 rgb(255, 255, 255);
+    background-color: rgba(236, 236, 234, 0.714);
+    transition: all 0.3s ease-in-out;
+}
+
+.todoForm-div1 input:focus {
+    box-shadow: 3px 3px 0 rgb(137, 180, 240);
+    background-color: rgb(242, 237, 243);
+    outline: none;
+}
+
+.todoForm-div2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    margin: 0 0 15px 10px;
+    text-transform: capitalize;
+    text-align: left;
+}
+
+.todoList-btn {
+    padding: 0.5rem 2rem;
+    border-radius: 0.5rem;
+    border: 0;
+    background-color: aliceblue;
+    box-shadow: 3px 3px 0 rgb(157, 153, 153);
+    color: rgb(99, 96, 96);
+    font-weight: bolder;
+    font-size: 1.3rem;
+    transition: all 0.3s ease-in-out;
+}
+
+.todoList-btn:hover {
+    box-shadow: 3px 3px 0 aliceblue;
+    background-color: rgb(157, 153, 153);
+    color: aliceblue;
+}

@@ -1,0 +1,82 @@
+.todo-edit-form,
+.todo-item {
+    width: 60vw;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+    margin: 5px 0;
+}
+
+.todo-edit-form input {
+    padding: 10px;
+    width: 100%;
+    margin-right: 10px;
+    border-radius: 0.5rem;
+    border: 0;
+    box-shadow: 3px 3px 0 rgb(255, 255, 255);
+    background-color: rgba(236, 236, 234, 0.714);
+    transition: all 0.3s ease-in-out;
+}
+
+.todo-edit-form input:focus {
+    box-shadow: 3px 3px 0 rgb(137, 180, 240);
+    background-color: rgb(242, 237, 243);
+    outline: none;
+}
+
+.todo-edit-form button {
+    padding: 0.4rem 2rem;
+    border-radius: 0.5rem;
+    border: 0;
+    background-color: rgba(236, 236, 234, 0.714);
+    box-shadow: 3px 3px 0 rgb(255, 255, 255);
+    color: rgb(99, 96, 96);
+    font-weight: bolder;
+    font-size: 1.3rem;
+    transition: all 0.3s ease-in-out;
+}
+
+.todo-edit-form button:hover {
+    box-shadow: 3px 3px 0 rgb(137, 180, 240);
+    background-color: rgb(255, 255, 255);
+    color: rgb(99, 96, 96);
+}
+
+.todo-btnEdit,
+.todo-btnRemove {
+    background-color: rgb(137, 180, 240);
+    border: 0;
+    padding: 8px;
+    padding-top: 10px;
+    border-radius: 1rem;
+    box-shadow: 3px 3px 0 rgb(242, 237, 243);
+    transition: all 0.3s ease-in-out;
+    text-align: center;
+}
+
+.todo-btnEdit:hover,
+.todo-btnRemove:hover {
+    background-color: rgb(242, 237, 243);
+    box-shadow: 3px 3px 0 rgb(137, 180, 240);
+}
+
+.todo-btnRemove {
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: 8px;
+    margin-right: 3px;
+}
+
+.todo-btnEdit {
+    margin: 0 3px;
+}
+
+.todo-task {
+    flex-grow: 8;
+}
+
+.todo-btns {
+    flex-grow: 2;
+}
