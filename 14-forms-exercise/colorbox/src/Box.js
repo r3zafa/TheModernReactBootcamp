@@ -6,14 +6,18 @@ render(){
     return(
         <div className="Box" 
              style={{
-                 height: `${this.props.height}rem`, 
-                 width:`${this.props.width}rem`, 
+                 height: `${this.props.height}px`, 
+                 width:`${this.props.width}px`, 
                  backgroundColor:this.props.color
          }}>
 
-            <button onClick={this.props.removeBox}>
-                X - {this.props.color}
-            </button>
+            <button className='Box-btn' onClick={this.props.removeBox}>X</button>
+            <p className='Box-text'>
+             {this.props.color}
+            </p>     
+            <p className='Box-text'>
+             {this.props.height}px x {this.props.width}px
+            </p> 
         </div>
     )
 }

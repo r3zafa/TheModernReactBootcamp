@@ -31,8 +31,8 @@ import './Board.css';
 class Board extends Component {
 
     static defaultProps = {
-        nRows: 5,
-        nCols: 5,
+        nRows: 4,
+        nCols: 4,
         chanceLightStartsOn: 0.25
     };
 
@@ -117,7 +117,7 @@ class Board extends Component {
 
         if(this.state.hasWon){
             return(
-                <div>
+                <div className="Board">
                     <h1 className="Board-h1 Board-youWon-h1">
                         YOU WON!
                     </h1>
@@ -134,6 +134,8 @@ class Board extends Component {
                         {tblBoard}                          
                         </tbody>
                     </table>
+                    <button className="Board-youWon-btn" onClick={this.reset}>new game</button>
+
                 </div>
             	)
             }

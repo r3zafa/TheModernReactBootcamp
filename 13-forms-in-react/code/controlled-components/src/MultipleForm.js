@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-
+import './MultipleForm.css';
 class MultipleForm extends Component {
   constructor(props) {
     super(props);
@@ -12,12 +12,12 @@ class MultipleForm extends Component {
   }
   handleSubmit(evt) {
     evt.preventDefault();
-    alert(`You typed: ${this.state.username}`);
+    alert(`You typed: ${this.state.username}, ${this.state.email}, ${this.state.password}`);
     this.setState({ username: "" });
   }
   render() {
     return (
-      <div>
+      <div className="Multiple-Form">
         <h1>Form w/ Multiple Inputs</h1>
         <form onSubmit={this.handleSubmit}>
           <input
@@ -40,7 +40,7 @@ class MultipleForm extends Component {
             value={this.state.password}
             onChange={this.handleChange}
           />
-          <button>Submit!</button>
+          <button className="btn">Submit!</button>
         </form>
       </div>
     );

@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import './Form.css';
 
 class Form extends Component {
   constructor(props) {
@@ -17,7 +18,7 @@ class Form extends Component {
   }
   render() {
     return (
-      <div>
+      <div className="Form">
         <h1>Form Demo</h1>
         <form onSubmit={this.handleSubmit}>
           <label htmlFor='username'>Username</label>
@@ -27,7 +28,7 @@ class Form extends Component {
             value={this.state.username}
             onChange={this.handleChange}
           />
-          <button>Submit!</button>
+          <button className="btn">Submit!</button>
         </form>
       </div>
     );

@@ -1,0 +1,38 @@
+    .Form {
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+        border: 3px solid red;
+        border-radius: 10px;
+        width: 90vw;
+        padding: 1rem;
+        background-color: antiquewhite;
+    }
+    
+    .Form>form {
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto;
+        gap: 0.9rem;
+    }
+    
+    .Form>h1 {
+        margin: 0;
+        padding: 0;
+        text-align: center;
+        margin-bottom: 0.5rem;
+    }
+    
+    @media (min-width:700px) {
+        .Form>form {
+            width: 60%;
+            max-width: 600px;
+        }
+    }
+    
+    @media (min-width:300px) {
+        .Form>form {
+            width: 90%;
+            max-width: 600px;
+        }
+    }

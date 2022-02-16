@@ -1,33 +1,50 @@
 .Box {
-    margin: 1rem;
-    padding: 5px;
-    border-radius: 0.5rem;
-    display: inline-flex;
+    position: relative;
+    display: flex;
+    flex-direction: column;
     align-content: center;
-    align-items: flex-end;
     justify-content: center;
     text-transform: uppercase;
-}
-
-.Box button {
-    margin-left: 10px;
-    margin-bottom: 8px;
-    margin-right: 10px;
-    border: 0;
     border-radius: 0.5rem;
-    padding: 5px 10px;
-    color: rgba(66, 65, 65, 0.767);
-    background-color: rgba(240, 248, 255, 0.418);
+    text-align: center;
 }
 
-.Box button:hover {
-    color: rgba(240, 248, 255, 0.418);
-    background-color: rgba(83, 80, 80, 0.815);
+.Box-btn {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    border: 0;
+    height: 24px;
+    width: 24px;
+    line-height: 1.5rem;
+    font-size: 1rem;
+    font-weight: 100;
+    border-radius: 50%;
+    margin: 0;
+    color: #000;
+    background-color: rgb(255, 255, 255);
+}
+
+.Box-btn:hover {
+    background-color: rgba(255, 255, 255, 0.6);
     transition: all 0.3s ease-in-out;
 }
 
-.colorSpan {
-    background-color: rgba(240, 248, 255, 0.384);
-    padding: 0 5px;
-    font-weight: bolder;
+.Box-text {
+    margin: 0 5px;
+}
+
+.Box-text:nth-child(2) {
+    background-color: rgba(255, 255, 255, 0.6);
+    padding: 0;
+    word-wrap: break-word;
+}
+
+.Box-text:nth-child(3) {
+    font-size: 0.7rem;
+    font-style: normal;
+    padding: 3px 0;
+    text-transform: capitalize;
+    background-color: rgba(255, 255, 255, 0.3);
+    color: #fff;
 }
