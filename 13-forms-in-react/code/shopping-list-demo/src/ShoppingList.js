@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import ShoppingListForm from "./ShoppingListForm";
 import uuid from "uuid/v4";
+import "./ShoppingList.css";
 
 class ShoppingList extends Component {
   constructor(props) {
@@ -21,10 +22,16 @@ class ShoppingList extends Component {
   }
   renderItems() {
     return (
-      <ul>
+      <ul className="ShoppingList-List">
         {this.state.items.map(item => (
-          <li key={item.id}>
-            {item.name}:{item.qty}
+          <li className="ShoppingList-ListItem" key={item.id}>
+            <span>
+              {item.name}
+            </span>
+            <p>
+              {item.qty}
+            </p> 
+            
           </li>
         ))}
       </ul>
@@ -32,10 +39,12 @@ class ShoppingList extends Component {
   }
   render() {
     return (
-      <div>
-        <h1>Shopping List</h1>
-        {this.renderItems()}
-        <ShoppingListForm addItem={this.addItem} />
+      <div className="ShoppingList">
+        <h1 className="ShoppingList-h1">Shopping List</h1>
+        <div className="ShoppingList-content">
+          <ShoppingListForm addItem={this.addItem} />
+          {this.renderItems()}
+        </div>
       </div>
     );
   }

@@ -1,0 +1,52 @@
+.ShoppingListForm-body {
+    box-sizing: initial;
+    display: flex;
+    flex-flow: column;
+    gap: var(--margin-sm);
+    border: 5px solid var(--border-color);
+    border-radius: var(--border-rad-md);
+    padding: 0;
+    max-height: 250px;
+}
+
+.ShoppingListForm-h3 {
+    margin-top: var(--margin-sm);
+    margin-bottom: var(--margin-sm);
+    text-align: center
+}
+
+.ShoppingListForm-input {
+    box-sizing: content-box;
+    background-color: var(--bg-input);
+    color: var(--text-secondary);
+    font-size: 1.2rem;
+    margin: 0 var(--margin-sm);
+    padding: var(--padding-sm);
+    border-radius: var(--border-rad-md);
+    border: 0;
+}
+
+.ShoppingListForm-btn {
+    transition: all .4s ease-in-out;
+    font-size: 1.1rem;
+    margin: var(--margin-md) var(--margin-sm);
+    padding: var(--padding-sm);
+    border-radius: var(--border-rad-md);
+    background-color: var(--border-color);
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.15rem;
+    border: 0;
+}
+
+.ShoppingListForm-btn:hover {
+    background-color: var(--bg-span);
+    transition: all .4s ease-in-out;
+}
+
+@media (min-width:800px) {
+    .ShoppingListForm-body {
+        flex: 0 0 35%;
+        box-sizing: border-box;
+    }
+}
